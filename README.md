@@ -1,4 +1,4 @@
-#A Group Chat Web App
+# A Group Chat Web App
 
 End to End Group Chat Web App
 
@@ -7,9 +7,9 @@ End to End Group Chat Web App
 
 To install
 
-$ pip3 install requirements.txt
-
-$ python3 app.py
+    `pip3 install requirements.txt`
+    
+    `python3 app.py`
 
 Then from browser open : http://127.0.0.1:5000
 
