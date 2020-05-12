@@ -1,13 +1,8 @@
-# A Group Chat Web App
-End to End Group Chat Web App
+Flask-SocketIO-Chat
+===================
 
-1. Flask microframwork based web server
-2. Flask-socketio library for end to end communication
+A simple chat application that demonstrates how to structure a Flask-SocketIO application.
 
-To install
+To run this application install the requirements in a virtual environment, run `python chat.py` and visit `http://localhost:5000` on one or more browser tabs.
 
-$ pip3 install requirements.txt
-
-$ python3 app.py
-
-Youtube Link : https://youtu.be/CjZ368a1d_E
+    $ python chat.py

@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Group Chat App</title>
+    </head>
+    <body>
+            <p style="font-family:verdana">
+            <div class="container" >
+                <div class="row m-1">
+                        <h1><pre>   </pre> Group Chat Interface</h1>
+                </div>
+                <div class="panel-body">
+                        <form class="needs-validation" method="POST" nonvalidate>
+                            {{ form.hidden_tag() }}
+
+                            <div class="form-row">
+                                
+                                {{ form.name.label }}<br>
+                            </div>
+                            <div class="form-row">
+                                    <div class="form-control">
+                                {{ form.name() }} {% for error in form.name.errors %}{{ error }}{% endfor %}<br>       
+                                </div> 
+                            
+                            </div>
+                            <div>
+                                <br>
+                            </div>
+                            
+                            <div class="form-row">
+                                
+                                    {{ form.room.label }}<br>
+                                
+                            </div>
+
+                            <div class="form-row">
+                                    <div class="form-control">
+                                    {{ form.room() }} {% for error in form.room.errors %}{{ error }}{% endfor %}<br>   
+                                </div> 
+                            
+                            </div>
+                            <br>
+                            <div class="form-row">
+                            <button class="btn btn-primary" type="submit">
+                            {{ form.submit() }}
+                            </button>
+                        </div>
+                        </form>
+                </div>
+            </p>
+    </body>
+</html>
